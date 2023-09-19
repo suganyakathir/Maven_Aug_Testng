@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="methods">
+  <test name="Test">
+    <classes>
+      <class name="org.reg.DemoReg"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="org.reg.DemoReg">
+        <methods>
+          <include name="test2"/>
+          <include name="beforeClass"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- org.reg.DemoReg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="org.reg.DemoReg">
+        <methods>
+          <include name="test2"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforemethod"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- org.reg.DemoReg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test(failed)(failed)" parallel="methods">
+    <classes>
+      <class name="org.reg.DemoReg">
+        <methods>
+          <include name="test2"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforemethod"/>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="aftermethod"/>
+          <include name="afterclass"/>
+          <include name="afterclass"/>
+        </methods>
+      </class> <!-- org.reg.DemoReg -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
